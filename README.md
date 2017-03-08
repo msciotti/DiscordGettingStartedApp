@@ -46,7 +46,28 @@ First, open up your favorite IDE/text editor/box that contains your stone tablet
 
 Implementation is best explained by example, so we'll go through the following example piece by piece:
 
-<script src="https://gist.github.com/msciotti/7854499bd63a565bf2340dc23b3c0cda.js"></script>
+```
+using Discord;
+class Program
+{
+    static void Main(string[] args) => new Program().Start();    
+
+    public void Start()
+    {
+        var client = new DiscordClient();
+
+        client.MessageReceived += async (s, e) =>
+        {
+            if (!e.Message.IsAuthor)
+                await e.Channel.SendMessage($"{e.Message.User.Mention} is awesome!");
+        };
+
+        client.ExecuteAndWait(async () => {
+            await client.Connect("MY_BOT_TOKEN_HERE", TokenType.Bot);
+        });
+    }
+}
+```
 
 `using Discord;` - This is familiar to anyone who's worked with .NET. It lets our application know that we want to make use of the Discord.Net library. 
 
