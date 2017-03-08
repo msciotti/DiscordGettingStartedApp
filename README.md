@@ -10,7 +10,7 @@ Let's get started!
 
 Making an application, or app, on Discord opens up a world of possibilities. You can do anything from designing a fully automated matchmaking system for your favorite game to playing theme music when you enter a voice channel. To start making your app, first visit [your app registration page](https://discordapp.com/developers/applications/me) and click on the "New App" tile. You'll see a page that looks like this:
 
-![Imgur](http://i.imgur.com/rDDAIaZ.png)
+<p align="center"><img src="http://i.imgur.com/rDDAIaZ.png"/></p>
 
 First, we must name our magnificent creation and give it a description. Will your bot play Rock/Paper/Scissors/Lizard/Spock, or be a jukebox for your friends? Let the world know here! Of course, be sure to give your bot an icon, for that personal touch. Don't worry about the redirect uri for now; when you're done, hit "Create App" and revel in your success!
 
@@ -18,13 +18,13 @@ First, we must name our magnificent creation and give it a description. Will you
 
 Now it's time to give our bot a home of its very own—or, many! Bots can be added to as many servers as you'd like and are not subject to the 100 server cap that we humans are. To add your new bot to your server, we've got to do a little bit of setup. Your app's page will look like this after it's been created:
 
-![Imgur](http://i.imgur.com/rZrM96d.png)
+<p align="center"><img src="http://i.imgur.com/rZrM96d.png" /></p>
 
 There's a whole lot to look at here. Right now, your application is dormant. To bring our creation to life, hit the "Create a Bot User" button and accept the pop-up. Bot Users are a special kind of Discord user that is, well, a bot! You can find out more about them on [our post about the Robot Revolution.](https://blog.discordapp.com/the-robot-revolution-has-unofficially-begun-unofficial-api-23a3c722d5bf#.l20q61gl5) 
 
 Congratulations! Your bot is now ready to make friends. If you want to keep your bot quarantined to your own personal server until it's ready for the world, leave the "Public Bot" option unchecked. This means that the bot will only be allowed to join servers in which you have administrative permissions. Before we leave, make sure to save your bot's `Client ID` and `Token`. We'll need them later!
 
-![Imgur](http://i.imgur.com/yjlNkzj.png)
+<p align="center"><img src="http://i.imgur.com/yjlNkzj.png" /></p>
 
 Adding the bot to your server is easy. To make it even easier, Some friends of ours have made a handy [Permissions Calculator Tool](https://discordapi.com/permissions.html#) to help us. You can choose which permissions to give your bot, and their handy tool with do the bitwise math for you. You can also insert your Client ID at the bottom of the page and have generate your invite link. This link is what others will eventually use to add your bot to their server.
 
@@ -32,7 +32,7 @@ Adding the bot to your server is easy. To make it even easier, Some friends of o
 
 Navigate to your invite link, select the server you'd like to ~~invade~~ join from the dropdown menu, and hit "Authorize". Voila! Now your bot has a home, and an easy way for others to invite it to their own server! Notice the [BOT] tag next to its name to denote it as a Bot User. This guy isn't fooling anyone.
 
-![Imgur](http://i.imgur.com/xVvWdxU.png)
+<p align="center"><img src="http://i.imgur.com/xVvWdxU.png"/></p>
 
 So we've made a bot, and added it to our server. But, as you can see from its `OFFLINE` status, it's still sleeping! Let's get to coding and bring our creation to life!
 
@@ -87,7 +87,7 @@ class Program
 
 Phew! That was a long explanation. Take five and pat yourself on the back for a job well done. When you're ready, build and run your application, and watch your bot come to life!
 
-![Imgur](http://imgur.com/3tgLl8i.gif)
+<p align="center"><img src="http://imgur.com/3tgLl8i.gif"/></p>
 
 ## The world is your oyster, kid
 
@@ -95,4 +95,4 @@ You are now ready to explore the wide, whacky, wonderful, wumpus-filled world of
 
 We're so excited that you chose to work with Discord. We can't wait to see what you make.
 
-![Wee](https://hammerandchisel.zendesk.com/hc/en-us/article_attachments/210427847/eeveelutions.gif)
+<p align="center"><img src="https://hammerandchisel.zendesk.com/hc/en-us/article_attachments/210427847/eeveelutions.gif"/></p>
