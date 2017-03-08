@@ -24,6 +24,8 @@ There's a whole lot to look at here, but we're concerned primarily with two thin
 
 Congratulations! Your bot is now ready to make friends. If you want to keep your bot quarantined to your own personal server until it's ready for the world, leave the "Public Bot" option unchecked. This means that the bot will only be allowed to join servers in which you have administrative permissions. Before we leave, make sure to note down your bot's `Client ID` and `Token`. We'll need them later!
 
+![Imgur](http://i.imgur.com/yjlNkzj.png)
+
 Adding the bot to your server is easy. Simply go to [https://discordapp.com/oauth2/authorize?&client_id=YOUR_CLIENT_ID_HERE&scope=bot&permissions=0](https://discordapp.com/oauth2/authorize?&client_id=YOUR_CLIENT_ID_HERE&scope=bot&permissions=0) in your favorite web browser, changing out `YOUR_CLIENT_ID_HERE` for your bot's Client ID that we noted earlier, and changing `permissions` to the integer that represents the privileges you'd like to allow your bot to have. A [full list of persmissions](https://discordapp.com/developers/docs/topics/permissions#bitwise-permission-flags) is available for your bitwise operation pleasure.
 
 To make it even easier, some friends of ours have made a handy [Permissions Calculator Tool](https://discordapi.com/permissions.html#) to help those of us who are mathematically impaired. You can easily choose which permissions you'd like your bot to have, and their handy tool with do the math for you. You can also insert your Client ID at the bottom of the page and have it generate your invite link for you. This link is what everyone will use to add your bot to their server.
