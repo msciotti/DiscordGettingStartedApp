@@ -1,6 +1,6 @@
 # Getting Started With Discord
 
-Welcome to Discord! Congratulations on choosing _the_ coolest, most versatile chat platform this side of the Mississippi for your next project—regardless of what side of the Mississippi you're on. This guide will help you get your very own Discord bot up and running in no time. We will primarily utilize the [Discord.Net library written for C#](https://github.com/RogueException/Discord.Net), but these steps can be applied to whatever language fills your heart with variables and joy. A [full list of our officially vetted libraries](https://discordapp.com/developers/docs/topics/libraries) is available in our developer portal.
+Welcome to Discord! Congratulations on choosing _the_ coolest, most versatile chat platform this side of Pluto for your next project. This guide will help you get your very own Discord bot up and running in no time. We will primarily utilize the [Discord.Net library written for C#](https://github.com/RogueException/Discord.Net), but these steps can be applied to whatever language fills your heart with variables and joy. A [full list of our officially vetted libraries](https://discordapp.com/developers/docs/topics/libraries) is available in our developer portal.
 
 All of our documentation can be found [in our developer portal](https://discordapp.com/developers/docs/intro) or [on GitHub](https://github.com/hammerandchisel/discord-api-docs) if you'd like to take a deeper dive at any point; we also love corrections and improvements.
 
