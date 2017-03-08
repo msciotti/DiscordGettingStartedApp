@@ -83,7 +83,7 @@ class Program
 
 `client.ExecuteAndWait(async () => {` - This line allows us to run asynchronous code in a synchronous method. In our case, it's the code that keeps our bot connected. The specifics of this pattern are a great lesson in asynchronous programming, but in our case, pretend it's like a fancy `while()` loop that keeps our bot alive.
 
-`await client.Connect("MY_BOT_TOKEN_HERE", TokenType.Bot); });` - This is the code that connects our bot to Discord. Replace `MY_BOT_TOKEN_HERE` with the token we saved earlier from your bot's settings page. `TokenType.Bot` lets Discord.Net know that we're connecting as a bot user rather than a regular user.
+`await client.Connect("MY_BOT_TOKEN_HERE", TokenType.Bot); });` - This is the code that connects your bot to Discord. Replace `MY_BOT_TOKEN_HERE` with the [token we saved earlier](https://github.com/msciotti/DiscordGettingStartedApp/blob/master/README.md#theres-no-place-like-home). `TokenType.Bot` lets Discord.Net know that we're connecting as a bot user rather than a regular user.
 
 Phew! That was a long explanation. Take five and pat yourself on the back for a job well done. When you're ready, build and run your application, and watch your bot come to life!
 
