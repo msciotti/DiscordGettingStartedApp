@@ -1,8 +1,8 @@
 # Getting Started With Discord
 
-Welcome to Discord! Congratulations on choosing _the_ coolest chat platform this side of the Mississippi for your next project—regardless of what side of the Mississippi you're on. This guide will help you get your very own Discord bot up and running in no time. We will primarily utilize the [Discord.Net library written for C#](https://github.com/RogueException/Discord.Net), but these steps can be applied to whatever language fills your heart with variables and joy. A [full list of our officially vetted libraries](https://discordapp.com/developers/docs/topics/libraries) is available in our developer portal.
+Welcome to Discord! Congratulations on choosing _the_ coolest, most versatile chat platform this side of the Mississippi for your next project—regardless of what side of the Mississippi you're on. This guide will help you get your very own Discord bot up and running in no time. We will primarily utilize the [Discord.Net library written for C#](https://github.com/RogueException/Discord.Net), but these steps can be applied to whatever language fills your heart with variables and joy. A [full list of our officially vetted libraries](https://discordapp.com/developers/docs/topics/libraries) is available in our developer portal.
 
-All of our documentation can be found [sitting pretty in our developer portal](https://discordapp.com/developers/docs/intro) or [on GitHub](https://github.com/hammerandchisel/discord-api-docs) if you'd like to take a deeper dive at any point; we also love corrections and improvements.
+All of our documentation can be found [in our developer portal](https://discordapp.com/developers/docs/intro) or [on GitHub](https://github.com/hammerandchisel/discord-api-docs) if you'd like to take a deeper dive at any point; we also love corrections and improvements.
 
 Let's get started!
 
@@ -22,7 +22,7 @@ Now it's time to give our bot a home of its very own—or many! Bots can be adde
 
 There's a whole lot to look at here. Right now, your application is dormant. To bring it to life, hit the "Create a Bot User" button and accept the pop-up. Bot Users are a special kind of Discord user that is, well, a bot! You can find out more about them on [our post about the Robot Revolution.](https://blog.discordapp.com/the-robot-revolution-has-unofficially-begun-unofficial-api-23a3c722d5bf#.l20q61gl5) 
 
-Congratulations! Your bot is now ready to make friends. If you want to keep your bot quarantined until it's ready for the world, leave the "Public Bot" option unchecked. This means that the bot will only be allowed to join servers in which you have administrative permissions. Before we leave, make sure to save your bot's `Client ID` and `Token`. We'll need them later!
+Congratulations! Your bot is now ready to make friends. If you want to keep your bot quarantined until it's ready for the world, leave the "Public Bot" option unchecked. This means that the bot will only be allowed to join servers in which you have administrative permissions. Before we leave, make sure to save your bot's `Client ID` and `Token`. We'll need them later! <a name="mytoken" />
 
 <p align="center"><img src="http://i.imgur.com/yjlNkzj.png" /></p>
 
@@ -85,7 +85,7 @@ class Program
 
 `client.ExecuteAndWait(async () => {` - This line allows us to run asynchronous code in a synchronous method. In our case, it's the code that keeps our bot connected. The specifics of this pattern are a great lesson in asynchronous programming, but in our case, pretend it's like a fancy `while()` loop that keeps our bot alive.
 
-`await client.Connect("MY_BOT_TOKEN_HERE", TokenType.Bot); });` - This is the code that connects your bot to Discord. Replace `MY_BOT_TOKEN_HERE` with the [token we saved earlier](https://github.com/msciotti/DiscordGettingStartedApp/blob/master/README.md#theres-no-place-like-home). `TokenType.Bot` lets Discord.Net know that we're connecting as a bot user rather than a regular user.
+`await client.Connect("MY_BOT_TOKEN_HERE", TokenType.Bot); });` - This is the code that connects your bot to Discord. Replace `MY_BOT_TOKEN_HERE` with the [token we saved earlier](#mytoken). `TokenType.Bot` lets Discord.Net know that we're connecting as a bot user rather than a regular user.
 
 Phew! That was a long explanation. Take five and pat yourself on the back for a job well done. When you're ready, build and run your application, and watch your bot come to life!
 
