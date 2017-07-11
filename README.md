@@ -20,7 +20,7 @@ Now it's time to give our bot a home of its very own—or many! Bots can be adde
 
 <p align="center"><img src="http://i.imgur.com/rZrM96d.png" /></p>
 
-There's a whole lot to look at here. Right now, your application is dormant. To bring it to life, hit the "Create a Bot User" button and accept the pop-up. Bot Users are a special kind of Discord user that is, well, a bot! You can find out more about them on [our post about the Robot Revolution.](https://blog.discordapp.com/the-robot-revolution-has-unofficially-begun-unofficial-api-23a3c722d5bf#.l20q61gl5) 
+There's a whole lot to look at here. Right now, your application is dormant. To bring it to life, hit the "Create a Bot User" button and accept the pop-up. Bot Users are a special kind of Discord user that is, well, a bot! You can find out more about them on [our post about the Robot Revolution.](https://blog.discordapp.com/the-robot-revolution-has-unofficially-begun-unofficial-api-23a3c722d5bf#.l20q61gl5)
 
 Congratulations! Your bot is now ready to make friends. If you want to keep your bot quarantined until it's ready for the world, leave the "Public Bot" option unchecked. This means that the bot will only be allowed to join servers in which you have administrative permissions. Before we leave, make sure to save your bot's `Client ID` and `Token`. We'll need them later! <a name="mytoken" />
 
@@ -28,7 +28,7 @@ Congratulations! Your bot is now ready to make friends. If you want to keep your
 
 Adding the bot to your server is easy. To make it even easier, some friends of ours made a handy [Permissions Calculator Tool](https://discordapi.com/permissions.html#). You can choose which permissions to give your bot, and their tool will do the math for you. You can also insert your Client ID at the bottom of the page and generate your invite link. This link is what others will eventually use to add your bot to their servers.
 
-> Adding bots to servers relies on Discord's OAuth2 flow. To learn more, visit [our page outlining how to implement OAuth2](https://discordapp.com/developers/docs/topics/oauth2#adding-bots-to-guilds). A [more expansive list of persmissions](https://discordapp.com/developers/docs/topics/permissions#bitwise-permission-flags) is also available for your bitwise operating pleasure.
+> Adding bots to servers relies on Discord's OAuth2 flow. To learn more, visit [our page outlining how to implement OAuth2](https://discordapp.com/developers/docs/topics/oauth2#adding-bots-to-guilds). A [more expansive list of permissions](https://discordapp.com/developers/docs/topics/permissions#bitwise-permission-flags) is also available for your bitwise operating pleasure.
 
 Navigate to your invite link, select the server you'd like to ~~invade~~ join from the dropdown menu, and hit "Authorize". Voila! Now your bot has a home, and an easy way for others to invite it to theirs! Don't worry; it's house trained.
 
@@ -52,7 +52,7 @@ Implementation is best explained by example, so we'll go through the following e
 using Discord;
 class Program
 {
-    static void Main(string[] args) => new Program().Start();    
+    static void Main(string[] args) => new Program().Start();
 
     public void Start()
     {
@@ -71,7 +71,7 @@ class Program
 }
 ```
 
-`using Discord;` - This is familiar to anyone who's worked with .NET. It lets our application know that we want to make use of the Discord.Net library. 
+`using Discord;` - This is familiar to anyone who's worked with .NET. It lets our application know that we want to make use of the Discord.Net library.
 
 `static void Main(string[] args) => new Program().Start();` - It's best to not run all of our code in a single static method. This instantiates a `new Program()` and calls its `Start()` method, which we've defined.
 
